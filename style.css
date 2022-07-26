@@ -1,0 +1,33 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+  width: 700px;
+  margin: 0px auto;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.gallery-title {
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: top center;
+  transition: 1s;
+}
+.box {
+  border: 1px solid #333;
+  box-shadow: 1px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  overflow: hidden;
+}
+.gallery img:hover {
+  transform: scale(2);
+}
